@@ -1,79 +1,19 @@
-# A "Bog" Adventure App - Intro to Rails 
+#Skye Bog App
+A Ruby on Rails Project
 
-| background |
-|---|
-|A bog is a mire that accumulates peat, a deposit of dead plant material—often mosses. |
+[Visit Site](http://skyebog.herokuapp.com)
 
-Researchers at your local biology lab are exploring and documenting a series of bogs, and the creatures of interest. Our job is to encourage people in the community to explore the bogs and submit their findings using our web application.
+###Description:
+At General Assembly we created a basic CRUD app in Ruby on Rails our first week into the Ruby language. We were to have users be able to add a creature, edit a creature and tag a creature. We needed to be able to delete and edit as well. We used the Flickr API to feed in imagery related to the creature name. I wanted to create an app that was beautiful, and also an hommage to faeries and mythical creatures. Because I'm a nerd and I like that kind of thing.
 
-We'll be creating a single model app to demonstrate editing resources.
-It's important to get comfortable with the process of starting a new Rails app since you'll be doing that for quite awhile
+###Challenges:
+Deploying to Heroku from Rails with the built in Rails database was messy. It required a lot of re-arranging, and the process took longer than my experiences with Node.js, Express and PostgresSQL. There were also font issues with Google Web Fonts, so I elected to create a typekit for the project.
 
-##Components
+###Wishlist:
+With more time, I'd choose a different framework, or re-do the site entirely in css of my own, using LESS or SASS. I don't love how Bootstrap handles responsive tables. Because the content of this app really lends itself to tables, I would have preferred to find another way to display the results.
 
-### Bog Model
-
-* A creature model that stores `name` and `description`
-
-### Bog Controller
-
-* A controller for your home page
-* A controller that manages bog creature
-
-
-### Bog Routes / Views
-
-| route | action / view | bonus? |
-|-------|--------|------|
-| GET /  | Your home page | no. |
-| GET /creature | list all creatures | no. |
-| GET /creature/new | show add creature form | no. |
-| POST /creature | create creature (no view) | no. |
-| GET /creature/1 | list creature (id=1) | no. |
-| GET /creature/2/edit | show edit creature form (id=2) | **bonus** |
-| PUT /creature/3 | update an existing creature (id=3) | **bonus** |
-
-##Recommended Process
-
-###Create basic app
-
-* Fork / clone
-* cd into directory
-* Create app `rails new ./ -T`
-* Test app
-    * Run server `rails s`
-    * Goto localhost:3000
-
-
-###Build specific functionality
-
-* Create model `rails g model ...` (you write the rest of this command)
-* Migrate `rake db:migrate`
-* Test models
-    * run console `rails c`
-    * Try some stuff...
-        * `Creature.all`
-        * `Creature.create`
-        * `Createre.new`
-        * `Creature.find`
-        * ...etc ...etc
-* Close console run `rails s`
-* Create routes...
-    * Add route to `routes.rb`
-    * Add controller / action
-    * Add view
-    * Test (go to url in browser)
-    * Repeat for each view
-* Add HTML to each view
-    * Use bootstrap
-    * Make it pretty... oh so pretty!!!
-* Add code to make the app functional
-
-## Bonus
-
-* Make a navigation bar
-* Make an edit form to edit an existing *Creature*
-* Make a delete button for each *Creature*
+###Tools:
+Ruby on Rails, Bootstrap Form_for Gem, Flickr API, HTML5, CSS, Bootstrap, the always amazing artists on Deviant Art.
  
 
 
